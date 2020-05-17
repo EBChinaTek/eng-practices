@@ -2,31 +2,19 @@
 
 
 
-The primary purpose of code review is to make sure that the overall
-code health of Google's code
-base is improving over time. All of the tools and processes of code review are
-designed to this end.
+代码审查的主要目的是确保谷歌代码库的整体代码健康的到持续提升。所有代码审查的工具与过程都以此为目的而设计。
 
-In order to accomplish this, a series of trade-offs have to be balanced.
+为了实现这个愿景，必须要平衡一系列的权衡点。
 
-First, developers must be able to _make progress_ on their tasks. If you never
-submit an improvement to the codebase, then the codebase never improves. Also,
-if a reviewer makes it very difficult for _any_ change to go in, then developers
-are disincentivized to make improvements in the future.
+首先，开发人员必须能够在其任务中 _有所进展_ 。如果你从来没有响代码库中提交过一次改进，那代码库就永远不会改进。同时，如果审查者让 _任何_ 变更都非常难以进入代码库，就会抑制开发人员在未来做出改进。
 
-On the other hand, it is the duty of the reviewer to make sure that each CL is
-of such a quality that the overall code health of their codebase is not
-decreasing as time goes on. This can be tricky, because often, codebases degrade
-through small decreases in code health over time, especially when a team is
-under significant time constraints and they feel that they have to take
-shortcuts in order to accomplish their goals.
+另一方面，确保每个CL的质量不会随着时间降低代码库的整体质量是审查者的职责所在。
+这很难察觉，因为通常，随着时间推移，代码健康会经历一系列微小的难以察觉的降低进而导致代码库降级。
+特别是当团队在重要时间约束下，团队感觉到他们必须抄近路才能完成目标，这种情况就会发生。
 
-Also, a reviewer has ownership and responsibility over the code they are
-reviewing. They want to ensure that the codebase stays consistent, maintainable,
-and all of the other things mentioned in
-["What to look for in a code review."](looking-for.md)
+同时，审查者对他们所审查的代码有所有权和责任。他们要确保代码库保持可持续、可维护，以及["代码审查看什么"](looking-for.md)中提到的所有事情。
 
-Thus, we get the following rule as the standard we expect in code reviews:
+因此，我们采用如下规则做为我们期望代码评审的标准：
 
 **In general, reviewers should favor approving a CL once it is in a state where
 it definitely improves the overall
