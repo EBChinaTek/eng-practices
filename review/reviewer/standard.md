@@ -53,17 +53,11 @@
 
 在一次代码审查中的任何冲突中，第一步永远应当是根据本文档和[CL作者指南](../developer/)中的其他文档以及本[审查者指南](index.md)的内容让开发人员和审查者尽量达成共识。
 
-When coming to consensus becomes especially difficult, it can help to have a
-face-to-face meeting or a video conference between the reviewer and the author, instead of
-just trying to resolve the conflict through code review comments. (If you do
-this, though, make sure to record the results of the discussion as a comment on
-the CL, for future readers.)
+如果打成共识特别困难，审查者和作者进行一次面对面的会议或视频比仅仅通过代码审查评论来解决冲突更有帮助。（如果你这样做，确保将讨论结果记录在CL评论中，以便未来的读者了解）。
 
-If that doesn't resolve the situation, the most common way to resolve it would
-be to escalate. Often the
-escalation path is to a broader team discussion, having a Technical Lead weigh in, asking
-for a decision from a maintainer of the code, or asking an Eng Manager to help
+如果无法解决冲突情形，解决的最常见的方式是冲突升级。通常升级路径是开展更广泛的团队讨论、让技术领导定夺、向代码的维护者寻求决定、或者让工程经理帮忙。
+**不要因为作者和审查者无法达成共识而停滞不前**。
 out. **Don't let a CL sit around because the author and the reviewer can't come
 to an agreement.**
 
-Next: [What to look for in a code review](looking-for.md)
+接下来：[代码审查中看什么](looking-for.md)
