@@ -37,25 +37,17 @@
 
 ## 原则 {#principles}
 
-*   Technical facts and data overrule opinions and personal preferences.
+*   技术事实和数据拒绝想法和个人偏好。
 
-*   On matters of style, the [style guide](http://google.github.io/styleguide/)
-    is the absolute authority. Any purely style point (whitespace, etc.) that is
-    not in the style guide is a matter of personal preference. The style should
-    be consistent with what is there. If there is no previous style, accept the
-    author's.
+*   强调风格，[风格指南](http://google.github.io/styleguide/)是绝对权威。任何风格指南之外的纯粹风格点（空格等）按个人偏好决定。
+    风格应该与已有代码一致。若之前无风格，就接受作者的风格。
+    
+*   **软件设计访问绝不是单纯的风格问题或只是某种个人偏好**。
+    它们是基于底层原则的，并且应当斟酌这些原则，而不是简单的个人想法。有时会有一些合理选项。
+    如果作者能够演示（即可以通过数据，也可以基于铁证如山的工程原则）若干同样有效的方法，那么审查者就应当接受作者的偏好。
+    否则，就应该严格按照软件设计的标准原则进行。
 
-*   **Aspects of software design are almost never a pure style issue or just a
-    personal preference.** They are based on underlying principles and should be
-    weighed on those principles, not simply by personal opinion. Sometimes there
-    are a few valid options. If the author can demonstrate (either through data
-    or based on solid engineering principles) that several approaches are
-    equally valid, then the reviewer should accept the preference of the author.
-    Otherwise the choice is dictated by standard principles of software design.
-
-*   If no other rule applies, then the reviewer may ask the author to be
-    consistent with what is in the current codebase, as long as that doesn't
-    worsen the overall code health of the system.
+*   如果没有应用其他规则，那审查者可以要求作者与当前代码库保持一致，只要不会让系统整体代码健康更糟糕就可以。
 
 ## 解决冲突 {#conflicts}
 
