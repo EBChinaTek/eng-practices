@@ -16,16 +16,11 @@
 
 因此，我们采用如下规则做为我们期望代码评审的标准：
 
-**In general, reviewers should favor approving a CL once it is in a state where
-it definitely improves the overall
-code health of the system
-being worked on, even if the CL isn't perfect.**
+**通常，当某个CL能明显提升目标系统整体代码健康的时候，审查者应该倾向于通过它，即便该CL并不完美。**
 
-That is _the_ senior principle among all of the code review guidelines.
+这是所有代码审查指南的 _唯一_ 高级原则。
 
-There are limitations to this, of course. For example, if a CL adds a feature
-that the reviewer doesn't want in their system, then the reviewer can certainly
-deny approval even if the code is well-designed.
+当然，对此是有限制的。例如，如果一个CL添加了一个审查者不想要加入到系统的功能，那审查者当然能拒绝审核，即便代码设计很好。
 
 A key point here is that there is no such thing as "perfect" code&mdash;there is
 only _better_ code. Reviewers should not require the author to polish every tiny
