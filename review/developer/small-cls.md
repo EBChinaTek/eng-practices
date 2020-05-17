@@ -58,15 +58,10 @@
 
 ## 分离重构 {#refactoring}
 
-It's usually best to do refactorings in a separate CL from feature changes or
-bug fixes. For example, moving and renaming a class should be in a different CL
-from fixing a bug in that class. It is much easier for reviewers to understand
-the changes introduced by each CL when they are separate.
+通常，最好再独立于功能变更或bug修复的CL中进行重构。例如，移动重命名某个类应当和修复这个类的bug在不同的CL。
+当CL是拆开的，审查者能更容易地理解每个CL所带来的改变。
 
-Small cleanups such as fixing a local variable name can be included inside of a
-feature change or bug fix CL, though. It's up to the judgment of developers and
-reviewers to decide when a refactoring is so large that it will make the review
-more difficult if included in your current CL.
+虽然小的清理（比如修改本地变量名）会包含在某个功能变更或bug修复CL中，但开发者和审查者要判断将重构包含在当前CL中是否会导致规模大到审查更加困难。
 
 ## 保持相关的测试代码同在CL中 {#test_code}
 
