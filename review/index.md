@@ -1,69 +1,52 @@
-# Code Review Developer Guide
+# 代码审查之开发者指南
 
-## Introduction {#intro}
+## 介绍 {#intro}
 
-A code review is a process where someone other than the author(s) of a piece of
-code examines that code.
+代码审查是一种由他人检查代码作者所写代码的一种过程。
 
-At Google we use code review to maintain the quality of our code and products.
+在谷歌，我们使用代码审查来维护代码和产品的质量。
 
-This documentation is the canonical description of Google's code review
-processes and policies.
+本文档是描述谷歌代码审查过程和规则的权威描述。
 
 
 
-This page is an overview of our code review process. There are two other large
-documents that are a part of this guide:
+本页是对我们代码审查过程的概述。本指南中包含两大部分：
 
--   **[How To Do A Code Review](reviewer/index.md)**: A detailed guide for code
-    reviewers.
--   **[The CL Author's Guide](developer/index.md)**: A detailed guide for developers
-    whose CLs are going through review.
+-   **[如何做代码评审](reviewer/index.md)**: 给代码审查者的详细指南。
+-   **[CL作者指南](developer/index.md)**: 给要提交CL进行审查的开发者的详细指南。
 
-## What Do Code Reviewers Look For? {#look_for}
+## 代码审查者会看什么？ {#look_for}
 
-Code reviews should look at:
+代码审查者应该看：
 
--   **Design**: Is the code well-designed and appropriate for your system?
--   **Functionality**: Does the code behave as the author likely intended? Is
-    the way the code behaves good for its users?
--   **Complexity**: Could the code be made simpler? Would another developer be
-    able to easily understand and use this code when they come across it in the
-    future?
--   **Tests**: Does the code have correct and well-designed automated tests?
--   **Naming**: Did the developer choose clear names for variables, classes,
-    methods, etc.?
--   **Comments**: Are the comments clear and useful?
--   **Style**: Does the code follow our
-    [style guides](http://google.github.io/styleguide/)?
--   **Documentation**: Did the developer also update relevant documentation?
+-   **设计**: 代码是否设计良好并适合你的系统？
+-   **功能**: 代码的行为是否和作者希望的意图一致？代码的行为方式是否对用户有益？
+-   **复杂性**: 代码能更简单吗？代码作者在未来遇到这段代码时，能很容易地理解并使用它么？
+-   **测试**: 代码具备正确且设计良好的自动化测试吗？
+-   **命名**: 开发人员是否为变量、类、方法等选择了清晰的名字？
+-   **注释**: 注释是否清晰且有用？
+-   **样式**: 代码是否遵循了我们的
+    [样式规范](http://google.github.io/styleguide/)？
+-   **文档**: 开发者是否也更新了相关文档？
 
-See **[How To Do A Code Review](reviewer/index.md)** for more information.
+更多信息请阅读 **[如何做代码审查](reviewer/index.md)** 。
 
-### Picking the Best Reviewers {#best_reviewers}
+### 选择最好的审查者 {#best_reviewers}
 
-In general, you want to find the *best* reviewers you can who are capable of
-responding to your review within a reasonable period of time.
+通常来说，你要找到 *最好的* 审查者，他们在合理时间内能对你的审查做出响应。
 
-The best reviewer is the person who will be able to give you the most thorough
-and correct review for the piece of code you are writing. This usually means the
-owner(s) of the code, who may or may not be the people in the OWNERS file.
-Sometimes this means asking different people to review different parts of the
-CL.
+最好的审查者是能够对你正在写的代码进行最全面且正确审查的人。往往是该代码的负责人（可能在OWNERS文件中也可能不在）。
+有时也可以让CL中负责其他部分代码的人进行审查。
 
-If you find an ideal reviewer but they are not available, you should at least CC
-them on your change.
+如果你找到了一个理想的审查者，但他们没有时间，你至少应该在你的变更中CC他们（即@他们）。
 
-### In-Person Reviews {#in_person}
+### 贴身审查 {#in_person}
 
-If you pair-programmed a piece of code with somebody who was qualified to do a
-good code review on it, then that code is considered reviewed.
+如果你和有资格进行优秀代码审查的人进行结对编程，那么代码就会被认为已经经过了审查。
 
-You can also do in-person code reviews where the reviewer asks questions and the
-developer of the change speaks only when spoken to.
+你还可以在审查者问问题的位置进行贴身审查，提交变更的开发人员只有在有人跟你说话的时候才能发言。
 
-## See Also {#seealso}
+## 另见 {#seealso}
 
--   [How To Do A Code Review](reviewer/index.md): A detailed guide for code reviewers.
--   [The CL Author's Guide](developer/index.md): A detailed guide for developers whose
-    CLs are going through review.
+-   [如何做代码审查](reviewer/index.md): 给代码审查者的详细指南。
+-   [CL作者指南](developer/index.md): 给要提交CL进行审查的开发者的详细指南。
