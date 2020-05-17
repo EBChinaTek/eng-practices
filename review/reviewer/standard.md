@@ -51,10 +51,7 @@
 
 ## 解决冲突 {#conflicts}
 
-In any conflict on a code review, the first step should always be for the
-developer and reviewer to try to come to consensus, based on the contents of
-this document and the other documents in [The CL Author's Guide](../developer/)
-and this [Reviewer Guide](index.md).
+在一次代码审查中的任何冲突中，第一步永远应当是根据本文档和[CL作者指南](../developer/)中的其他文档以及本[审查者指南](index.md)的内容让开发人员和审查者尽量达成共识。
 
 When coming to consensus becomes especially difficult, it can help to have a
 face-to-face meeting or a video conference between the reviewer and the author, instead of
