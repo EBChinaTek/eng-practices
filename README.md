@@ -1,30 +1,22 @@
-# Google Engineering Practices Documentation
+# 谷歌工程实践文档
 
-Google has many generalized engineering practices that cover all languages and
-all projects. These documents represent our collective experience of various
-best practices that we have developed over time. It is possible that open source
-projects or other organizations would benefit from this knowledge, so we work to
-make it available publicly when possible.
+谷歌有许多通用的工程实践，涵盖所有语言和所有项目。这些文档代表了我们不断积累的各种最佳实践的经验。开源项目和其他组织都会从这些知识中获益，所以我们在可能之时进行公开发表。
 
-Currently this contains the following documents:
+当前，本项目包含如下文档：
 
-*   [Google's Code Review Guidelines](review/index.md), which are actually two
-    separate sets of documents:
-    *   [The Code Reviewer's Guide](review/reviewer/index.md)
-    *   [The Change Author's Guide](review/developer/index.md)
+*   [谷歌代码审查指南](review/index.md)，这实际上分成两个文档集合：
+    *   [代码审查者指南](review/reviewer/index.md)
+    *   [代码变更者指南](review/developer/index.md)
 
-## Terminology
+## 术语
 
-There is some Google-internal terminology used in some of these documents, which
-we clarify here for external readers:
+这些文档中有一些谷歌内部使用的术语，我们在此对外部读者澄清：
 
-*   **CL**: Stands for "changelist," which means one self-contained change that
-    has been submitted to version control or which is undergoing code review.
-    Other organizations often call this a "change" or a "patch."
-*   **LGTM**: Means "Looks Good to Me." It is what a code reviewer says when
+*   **CL**: 表示“变更清单”，意思是一个已经被提交到版本控制并且在进行代码评审的自包含变更。其他组织通常称之为“变更”或“补丁”。
+*   **LGTM**: 表示“对我来说看起来不错”。当代码审查者审核通过某个CL时就会说这句话。
     approving a CL.
 
-## License
+## 许可
 
 The documents in this project are licensed under the CC-By 3.0 License, which
 encourages you to share these documents. See
