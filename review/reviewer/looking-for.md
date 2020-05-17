@@ -197,24 +197,21 @@ tell a developer what they did right than to tell them what they did wrong.
 
 ## 概要
 
-In doing a code review, you should make sure that:
+在开展代码审查时，你应该确保：
 
--   The code is well-designed.
--   The functionality is good for the users of the code.
--   Any UI changes are sensible and look good.
--   Any parallel programming is done safely.
--   The code isn't more complex than it needs to be.
--   The developer isn't implementing things they *might* need in the future but
-    don't know they need now.
--   Code has appropriate unit tests.
--   Tests are well-designed.
--   The developer used clear names for everything.
--   Comments are clear and useful, and mostly explain *why* instead of *what*.
--   Code is appropriately documented (generally in g3doc).
--   The code conforms to our style guides.
+-   代码设计良好。
+-   功能对代码的用户有益。
+-   任何UI的改变都是明智的且看起来不错。
+-   并行编程是安全的。
+-   代码复杂度不高于必需。
+-   开发人员没有实现他们在未来 *可能* 需要但不知道他们现在需要实现的事情。
+-   代码具备合适的单元测试。
+-   测试设计良好。
+-   开发人员对所有事情使用了清晰的名字。
+-   注释清晰、有用，多为解释 *为什么* 而非 *什么*。
+-   代码编写了合适的文档（通常用g3doc）。
+-   代码负荷我们的风格指南。
 
-Make sure to review **every line** of code you've been asked to review, look at
-the **context**, make sure you're **improving code health**, and compliment
-developers on **good things** that they do.
+确保审查要求审查代码的 **每一行**，看看**上下文**，确保你在**改进代码健康**并且赞赏开发人员所做的 **好的事情**。
 
-Next: [Navigating a CL in Review](navigate.md)
+接下来：[导航评审中的CL](navigate.md)
