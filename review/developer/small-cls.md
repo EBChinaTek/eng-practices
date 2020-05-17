@@ -57,7 +57,7 @@ configuration or experiment that uses that code; this is easier to roll back
 too, if necessary, as configuration/experiment files are sometimes pushed to
 production faster than code changes.
 
-## Separate Out Refactorings {#refactoring}
+## 分离重构 {#refactoring}
 
 It's usually best to do refactorings in a separate CL from feature changes or
 bug fixes. For example, moving and renaming a class should be in a different CL
@@ -69,7 +69,7 @@ feature change or bug fix CL, though. It's up to the judgment of developers and
 reviewers to decide when a refactoring is so large that it will make the review
 more difficult if included in your current CL.
 
-## Keep related test code in the same CL {#test_code}
+## 保持相关的测试代码同在CL中 {#test_code}
 
 Avoid splitting test code into a separate CL. Tests validating your code
 modifications should go into the same CL, even if it increases the code line
@@ -82,7 +82,7 @@ similar to the [refactorings guidelines](#refactoring). That includes:
 *   refactoring the test code (e.g. introduce helper functions).
 *   introducing larger test framework code (e.g. an integration test).
 
-## Don't Break the Build {#break}
+## 不要破坏构建 {#break}
 
 If you have several CLs that depend on each other, you need to find a way to
 make sure the whole system keeps working after each CL is submitted. Otherwise
@@ -90,7 +90,7 @@ you might break the build for all your fellow developers for a few minutes
 between your CL submissions (or even longer if something goes wrong unexpectedly
 with your later CL submissions).
 
-## Can't Make it Small Enough {#cant}
+## 无法使其足够小 {#cant}
 
 Sometimes you will encounter situations where it seems like your CL *has* to be
 large. This is very rarely true. Authors who practice writing small CLs can
@@ -108,4 +108,4 @@ what is coming. In this situation, expect to be going through the review process
 for a long time, be vigilant about not introducing bugs, and be extra diligent
 about writing tests.
 
-Next: [How to Handle Reviewer Comments](handling-comments.md)
+接下来：[如何处理审查者评论](handling-comments.md)
