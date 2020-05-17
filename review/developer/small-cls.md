@@ -1,89 +1,47 @@
-# Small CLs
+# 小CL
 
 
 
-## Why Write Small CLs? {#why}
+## 为什么写小CL？ {#why}
 
-Small, simple CLs are:
+小而简单的CL可以：
 
--   **Reviewed more quickly.** It's easier for a reviewer to find five minutes
-    several times to review small CLs than to set aside a 30 minute block to
-    review one large CL.
--   **Reviewed more thoroughly.** With large changes, reviewers and authors tend
-    to get frustrated by large volumes of detailed commentary shifting back and
-    forth—sometimes to the point where important points get missed or dropped.
--   **Less likely to introduce bugs.** Since you're making fewer changes, it's
-    easier for you and your reviewer to reason effectively about the impact of
-    the CL and see if a bug has been introduced.
--   **Less wasted work if they are rejected.** If you write a huge CL and then
-    your reviewer says that the overall direction is wrong, you've wasted a lot
-    of work.
--   **Easier to merge.** Working on a large CL takes a long time, so you will
-    have lots of conflicts when you merge, and you will have to merge
-    frequently.
--   **Easier to design well.** It's a lot easier to polish the design and code
-    health of a small change than it is to refine all the details of a large
-    change.
--   **Less blocking on reviews.** Sending self-contained portions of your
-    overall change allows you to continue coding while you wait for your current
-    CL in review.
--   **Simpler to roll back.** A large CL will more likely touch files that get
-    updated between the initial CL submission and a rollback CL, complicating
-    the rollback (the intermediate CLs will probably need to be rolled back
-    too).
+-   **审查速度更快。** 对审查者来说，找到5分钟完成一个小CL的审查并审查多个CL要比抽出30分钟审查一个大的CL要简单的多。
+-   **审查更彻底。** 采用大的变更，需要反复回忆大量的变更细节，才能想起当时的思路，而有些重要的思考就会遗忘或丢失，导致审查者和变更作者受挫。
+-   **更不容易引入bug。** 由于你做的变更更少，对你和你的审查者能更有效地讨论该CL的影响，并发现是否引入了bug。
+-   **如果CL被拒绝，浪费的工作更少。** 如果你写了个巨大的CL，然后你的审查者说整个方向都是错的，那你就浪费了大量工作。
+-   **更早合并。** 做大的CL要花很长时间，所以你合并时会有很多冲突，并且你将不得不频繁合并。
+-   **更容易把设计做好。** 小变更的设计打磨和代码健康保养比改进大变更的所有细节要容易得多。
+-   **审查中的阻塞更少。** 分多个独立的小块发布整个变更能够让你在等待CL审查的同时持续编码。
+-   **回退更容易。** 大CL更可能碰触到在CL最初发布和CL回退之间被别人更新的文件，这会让回退变得复杂（期间的CL可能也需要回退）。
 
-Note that **reviewers have discretion to reject your change outright for the
-sole reason of it being too large.** Usually they will thank you for your
-contribution but request that you somehow make it into a series of smaller
-changes. It can be a lot of work to split up a change after you've already
-written it, or require lots of time arguing about why the reviewer should accept
-your large change. It's easier to just write small CLs in the first place.
+注意，**审查者有权仅仅由于过大直接拒绝你的CL**。通常他们会感谢你的贡献，但要求你将它拆分成一系列更小的变更。在你已经写完一个变更之后再拆分，需要做许多工作，或者需要大量时间争论为什么审查者应该接收你的大变更。如果已开始就写小的CL，就简单得多。
 
-## What is Small? {#what_is_small}
+## 什么是小？ {#what_is_small}
 
-In general, the right size for a CL is **one self-contained change**. This means
-that:
+通常，一个CL的正确大小是指**一个独立变更**。其意思是：
 
--   The CL makes a minimal change that addresses **just one thing**. This is
-    usually just one part of a feature, rather than a whole feature at once. In
-    general it's better to err on the side of writing CLs that are too small vs.
-    CLs that are too large. Work with your reviewer to find out what an
-    acceptable size is.
--   Everything the reviewer needs to understand about the CL (except future
-    development) is in the CL, the CL's description, the existing codebase, or a
-    CL they've already reviewed.
--   The system will continue to work well for its users and for the developers
-    after the CL is checked in.
--   The CL is not so small that its implications are difficult to understand. If
-    you add a new API, you should include a usage of the API in the same CL so
-    that reviewers can better understand how the API will be used. This also
-    prevents checking in unused APIs.
+-   CL做最小的改变，每个**只解决一件事**。这通常只是一个功能的一部分，而不是一次提交整个功能。一般来说，将CL写得过度小比写得过大要好。你需要和你的审查者一起找到可接受的大小。
+-   代码审查者理解CL所需要的所有事情（除了未来的开发）都要包含在CL中，比如CL的描述、已有的代码、或者某个已经审查的CL。
+-   当CL被签入之后，系统能够继续对其用户和开发人员正常运行。
+-   CL不能小到难以理解其改变的意图。如果你添加了一个新的API，你应该将API的使用放到同一个CL中，以便审查者能够更好地理解API会被如何使用。这也有助于避免签入未使用的API。
 
-There are no hard and fast rules about how large is "too large." 100 lines is
-usually a reasonable size for a CL, and 1000 lines is usually too large, but
-it's up to the judgment of your reviewer. The number of files that a change is
-spread across also affects its "size." A 200-line change in one file might be
-okay, but spread across 50 files it would usually be too large.
+没有硬性且快速的规则规定多大算“太大”。100行代码通常是一个CL的合理大小，1000行通常就太大了，但这取决于你的审查者的判断。一次变更中所改到的文件数量也影响其“大小”。对一个文件的200行变更可能是OK的，但跨50个文件修改200行就太大了。
 
-Keep in mind that although you have been intimately involved with your code from
-the moment you started to write it, the reviewer often has no context. What
-seems like an acceptably-sized CL to you might be overwhelming to your reviewer.
-When in doubt, write CLs that are smaller than you think you need to write.
-Reviewers rarely complain about getting CLs that are too small.
+要时刻提醒自己：你从一开始写代码的时候就已经深度参与进来了，但审查者通常对上下文一无所知。
+对你来说看起来是大小可以接受的CL对你的审查者来说可能就崩溃了。
+如有疑问，请将CL写得比你认为必须要写的大小更小。
+审查者很少会抱怨CL太小。
 
-## When are Large CLs Okay? {#large_okay}
+## 什么时候大CL也是OK的？ {#large_okay}
 
-There are a few situations in which large changes aren't as bad:
+有些情形下，大的变更不会被认为是不好的：
 
--   You can usually count deletion of an entire file as being just one line of
-    change, because it doesn't take the reviewer very long to review.
--   Sometimes a large CL has been generated by an automatic refactoring tool
-    that you trust completely, and the reviewer's job is just to sanity check
+-   你通常会将删除一整个文件算作一行变更，因为它不会花审查人员很多时间做审查。
+-   有时，大CL是由你完全信任的自动化重构工具生成的，审查者的工作只是象征性地检查，并说它们的确想要改变。这些CL会更大一些，但上面的一些警告（比如合并和测试）依然适用。
     and say that they really do want the change. These CLs can be larger,
-    although some of the caveats from above (such as merging and testing) still
-    apply.
 
-### Splitting by Files {#splitting-files}
+### 按文件拆分 {#splitting-files}
 
 Another way to split up a CL is by groupings of files that will require
 different reviewers but are otherwise self-contained changes.
