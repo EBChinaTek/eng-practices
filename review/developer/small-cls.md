@@ -43,19 +43,13 @@
 
 ### 按文件拆分 {#splitting-files}
 
-Another way to split up a CL is by groupings of files that will require
-different reviewers but are otherwise self-contained changes.
+另一种分解CL的方式是对需要不同审查者审查的文件进行分组，但需要形成各自独立的变更。
 
-For example: you send off one CL for modifications to a protocol buffer and
-another CL for changes to the code that uses that proto. You have to submit the
-proto CL before the code CL, but they can both be reviewed simultaneously. If
-you do this, you might want to inform both sets of reviewers about the other CL
-that you wrote, so that they have context for your changes.
+例如：你发布了一个对协议缓冲区进行修改的CL和另一个对使用该协议的代码进行修改的CL。你必须先发布协议CL，再发布代码CL，但它们能够同时进行审查。
+如果你这样做，你可能要同时通知两组审查者你写了另一个CL，以便他们了解你的变更上下文。
 
-Another example: you send one CL for a code change and another for the
-configuration or experiment that uses that code; this is easier to roll back
-too, if necessary, as configuration/experiment files are sometimes pushed to
-production faster than code changes.
+
+再举个例子：你发布了一个代码变更的CL和另一个配置或实验使用该代码的CL；要想在必要的时候回退也很简单，因为配置/实验文件有时能比代码变更更快地推到生产环境。
 
 ## 分离重构 {#refactoring}
 
