@@ -25,14 +25,9 @@
 此处的要点在于，不存在所谓的“完美的”代码&mdash;只有 _更好_ 的代码。审查者不应该要求作者打磨CL的每个小片段才授予通过。
 相反，审查者应该在进度与所建议改进的重要性之间进行平衡。不要追求完美，审查者应该寻求 _持续的改进_ 。一个改进系统可维护性、可读性和可理解性的CL做为一个整体，不应当因不“完美”延迟数天或数周。
 
-Reviewers should _always_ feel free to leave comments expressing that something
-could be better, but if it's not very important, prefix it with something like
-"Nit: " to let the author know that it's just a point of polish that they could
-choose to ignore.
+审查者应该 _总是_ 可以自由发表评论表示有些事情可以更好，但如果不是非常重要，需要加以写诸如“Nit：”的前缀让作者直到这是可以选择忽略的打磨点。
 
-Note: Nothing in this document justifies checking in CLs that definitely
-_worsen_ the overall code health of the system. The only time you would do that
-would be in an [emergency](../emergencies.md).
+注意：本文档没有为签入明显让系统的整体代码健康 _更差_ 的CL做辩护。只有在[紧急情况](../emergencies.md)下才能这样做。
 
 ## 辅导
 
