@@ -6,10 +6,10 @@
 
 ## 设计
 
-The most important thing to cover in a review is the overall design of the CL.
-Do the interactions of various pieces of code in the CL make sense? Does this
-change belong in your codebase, or in a library? Does it integrate well with the
-rest of your system? Is now a good time to add this functionality?
+覆盖一次审查的最重要的事情就是CL的整体设计。
+CL中不同代码片段之间的交互明智吗？这个变动属于你的代码库还是依赖库？
+它和系统其他部分集成得好吗？
+现在是添加这个功能的好时机吗？
 
 ## 功能
 
