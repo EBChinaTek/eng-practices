@@ -75,11 +75,7 @@
 
 ## 不要破坏构建 {#break}
 
-If you have several CLs that depend on each other, you need to find a way to
-make sure the whole system keeps working after each CL is submitted. Otherwise
-you might break the build for all your fellow developers for a few minutes
-between your CL submissions (or even longer if something goes wrong unexpectedly
-with your later CL submissions).
+如果你有许多彼此依赖的CL，你必须找到一种方式来确保整个系统能够再每一个CL发布后保持正常运行。否则，再你发布CL的间隔中的几分钟内，会破坏所有兄弟开发人员的构建（如果你后续的CL发布出现了意料之外的错误，时间就更长了）。
 
 ## 无法使其足够小 {#cant}
 
