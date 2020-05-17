@@ -1,17 +1,12 @@
-# How to do a code review
+# 如何做代码审查
 
-The pages in this section contain recommendations on the best way to do code
-reviews, based on long experience. All together they represent one complete
-document, broken up into many separate sections. You don't have to read them
-all, but many people have found it very helpful to themselves and their team to
-read the entire set.
+这部分的文档包含了基于长期经验积累总结的开展代码审查的建议。这些分成多个独立部分的片段汇集在一起就是一片完整的文档。你不必全部都读，但许多人发现阅读整个文档集合对他们自身和团队非常有用。 
 
--   [The Standard of Code Review](standard.md)
--   [What to Look For In a Code Review](looking-for.md)
--   [Navigating a CL in Review](navigate.md)
--   [Speed of Code Reviews](speed.md)
--   [How to Write Code Review Comments](comments.md)
--   [Handling Pushback in Code Reviews](pushback.md)
+-   [代码审查的标准](standard.md)
+-   [在一次代码审查中要看什么](looking-for.md)
+-   [在审查CL时进行导航](navigate.md)
+-   [代码审查的速度](speed.md)
+-   [如何写代码审查评论](comments.md)
+-   [在代码审查中进行打回](pushback.md)
 
-See also the [CL Author's Guide](../developer/), which gives detailed guidance
-to developers whose CLs are undergoing review.
+另可参见[CL作者指南](../developer/)，其中对CL正被审查的开发人员给出了详细的指南。
