@@ -65,16 +65,13 @@
 
 ## 保持相关的测试代码同在CL中 {#test_code}
 
-Avoid splitting test code into a separate CL. Tests validating your code
-modifications should go into the same CL, even if it increases the code line
-count.
+避免将测试代码拆分到一个单独的CL中。用于验证你的代码修改的测试应该连同代码放在同一个CL中，即便这会增加代码变更行数。
 
-However, <i>independent</i> test modifications can go into separate CLs first,
-similar to the [refactorings guidelines](#refactoring). That includes:
+然而，<i>独立的</i>测试修改可以先放到单独的CL中，类似于[refactorings guidelines](#refactoring)。这包括：
 
-*   validating pre-existing, submitted code with new tests.
-*   refactoring the test code (e.g. introduce helper functions).
-*   introducing larger test framework code (e.g. an integration test).
+*   用新的测试验证之前已经存在的、提交过的代码。
+*   重构测试代码（例如，引入帮助器函数）。
+*   引入更大规模测试框架代码（例如，集成测试）。
 
 ## 不要破坏构建 {#break}
 
