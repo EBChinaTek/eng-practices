@@ -1,4 +1,4 @@
-# The Standard of Code Review
+# 代码审查的标准
 
 
 
@@ -57,7 +57,7 @@ Note: Nothing in this document justifies checking in CLs that definitely
 _worsen_ the overall code health of the system. The only time you would do that
 would be in an [emergency](../emergencies.md).
 
-## Mentoring
+## 辅导
 
 Code review can have an important function of teaching developers something new
 about a language, a framework, or general software design principles. It's
@@ -67,7 +67,7 @@ in mind that if your comment is purely educational, but not critical to meeting
 the standards described in this document, prefix it with "Nit: " or otherwise
 indicate that it's not mandatory for the author to resolve it in this CL.
 
-## Principles {#principles}
+## 原则 {#principles}
 
 *   Technical facts and data overrule opinions and personal preferences.
 
@@ -89,7 +89,7 @@ indicate that it's not mandatory for the author to resolve it in this CL.
     consistent with what is in the current codebase, as long as that doesn't
     worsen the overall code health of the system.
 
-## Resolving Conflicts {#conflicts}
+## 解决冲突 {#conflicts}
 
 In any conflict on a code review, the first step should always be for the
 developer and reviewer to try to come to consensus, based on the contents of
