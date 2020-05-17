@@ -22,14 +22,8 @@
 
 当然，对此是有限制的。例如，如果一个CL添加了一个审查者不想要加入到系统的功能，那审查者当然能拒绝审核，即便代码设计很好。
 
-A key point here is that there is no such thing as "perfect" code&mdash;there is
-only _better_ code. Reviewers should not require the author to polish every tiny
-piece of a CL before granting approval. Rather, the reviewer should balance out
-the need to make forward progress compared to the importance of the changes they
-are suggesting. Instead of seeking perfection, what a reviewer should seek is
-_continuous improvement_. A CL that, as a whole, improves the maintainability,
-readability, and understandability of the system shouldn't be delayed for days
-or weeks because it isn't "perfect."
+此处的要点在于，不存在所谓的“完美的”代码&mdash;只有 _更好_ 的代码。审查者不应该要求作者打磨CL的每个小片段才授予通过。
+相反，审查者应该在进度与所建议改进的重要性之间进行平衡。不要追求完美，审查者应该寻求 _持续的改进_ 。一个改进系统可维护性、可读性和可理解性的CL做为一个整体，不应当因不“完美”延迟数天或数周。
 
 Reviewers should _always_ feel free to leave comments expressing that something
 could be better, but if it's not very important, prefix it with something like
