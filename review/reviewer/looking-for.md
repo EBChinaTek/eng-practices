@@ -13,10 +13,8 @@ CL中不同代码片段之间的交互明智吗？这个变动属于你的代码
 
 ## 功能
 
-Does this CL do what the developer intended? Is what the developer intended good
-for the users of this code? The "users" are usually both end-users (when they
-are affected by the change) and developers (who will have to "use" this code in
-the future).
+这个CL做了该开发人员想要做的事情了么？开发人员想要给该代码的用户带来什么收益？
+“用户”通常既有最终用户（当他们受到变更影响）和开发人员（他们未来将必须“使用”这个代码）。
 
 Mostly, we expect developers to test CLs well-enough that they work correctly by
 the time they get to code review. However, as the reviewer you should still be
