@@ -16,28 +16,15 @@ CL中不同代码片段之间的交互明智吗？这个变动属于你的代码
 这个CL做了该开发人员想要做的事情了么？开发人员想要给该代码的用户带来什么收益？
 “用户”通常既有最终用户（当他们受到变更影响）和开发人员（他们未来将必须“使用”这个代码）。
 
-Mostly, we expect developers to test CLs well-enough that they work correctly by
-the time they get to code review. However, as the reviewer you should still be
-thinking about edge cases, looking for concurrency problems, trying to think
-like a user, and making sure that there are no bugs that you see just by reading
-the code.
+大多时候，我们期望开发人员在提交代码审查之前对CL进行足够好的测试来确保这些CL能够正确运行。
+然而，做为审查者，你应该一直思考边界情况，查找并发问题，尽量像用户一样思考，并确保在阅读代码之前没有可见的bug。
 
-You *can* validate the CL if you want—the time when it's most important for a
-reviewer to check a CL's behavior is when it has a user-facing impact, such as a
-**UI change**. It's hard to understand how some changes will impact a user when
-you're just reading the code. For changes like that, you can have the developer
-give you a demo of the functionality if it's too inconvenient to patch in the CL
-and try it yourself.
+当CL对用户有影响，比如**界面改变**，那么检查CL的行为对审查者来说就至关重要了，你 *能够* 要求对CL进行验证的时间。
+当你在读代码时，很难理解有些变更对用户会产生怎样的影响。对于这样的变更，如果自己尝试测试这个CL太不方便，你可以让开发人员给你一个功能Demo。
 
-Another time when it's particularly important to think about functionality
-during a code review is if there is some sort of **parallel programming** going
-on in the CL that could theoretically cause deadlocks or race conditions. These
-sorts of issues are very hard to detect by just running the code and usually
-need somebody (both the developer and the reviewer) to think through them
-carefully to be sure that problems aren't being introduced. (Note that this is
-also a good reason not to use concurrency models where race conditions or
-deadlocks are possible—it can make it very complex to do code reviews or
-understand the code.)
+代码审查中考虑功能的另一个重要情况是如果CL中执行了某种在理论上可能产生思索或竞态条件**并行编程**。
+这类问题很难通过运行代码被探测到，通常要求人们（开发者和审查者）一起对其进行谨慎的思考，确定问题不会被引入。
+（要注意的是，这也是为什么不要使用并发模型的一大原因，竞态条件和思索都可能让其非常复杂，难以进行代码审查或代码难以理解）。
 
 ## 复杂性
 
