@@ -79,20 +79,11 @@
 
 ## 无法使其足够小 {#cant}
 
-Sometimes you will encounter situations where it seems like your CL *has* to be
-large. This is very rarely true. Authors who practice writing small CLs can
-almost always find a way to decompose functionality into a series of small
-changes.
+有时，你会遇到一些似乎你的CL*必须*大的情况。这很少会发生。实践编写小CL的代码作者们几乎总是能找到将功能解构为一系列小变更的方式。
 
-Before writing a large CL, consider whether preceding it with a refactoring-only
-CL could pave the way for a cleaner implementation. Talk to your teammates and
-see if anybody has thoughts on how to implement the functionality in small CLs
-instead.
+在写大CL前，请考虑一下是否在开始之前先用一个只包含重构的CL能够为更整洁的实现铺平道路。和你的队友聊聊，看看是否有人已经想到如何用小CL实现这个功能。
 
-If all of these options fail (which should be extremely rare) then get consent
-from your reviewers in advance to review a large CL, so they are warned about
-what is coming. In this situation, expect to be going through the review process
-for a long time, be vigilant about not introducing bugs, and be extra diligent
-about writing tests.
+如果所有这些尝试都失败了（这种情况极端少见），那你就需要在审查大CL前征求审查者的统一，以便他们能够提前被预警接下来要遭遇到什么。
+在这种情况下，预计审查过程会很漫长，要警惕不要引入bug，并且要更勤于编写测试。
 
 接下来：[如何处理审查者评论](handling-comments.md)
