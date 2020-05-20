@@ -28,20 +28,11 @@ CL中不同代码片段之间的交互明智吗？这个变动属于你的代码
 
 ## 复杂性
 
-Is the CL more complex than it should be? Check this at every level of the
-CL—are individual lines too complex? Are functions too complex? Are classes too
-complex? "Too complex" usually means **"can't be understood quickly by code
-readers."** It can also mean **"developers are likely to introduce bugs when
-they try to call or modify this code."**
+CL比原本应该的更复杂么？对此，需要在CL的各个层面进行检查：个别代码行过于复杂？函数过于复杂？类过于复杂？“过于复杂”通常的意思是**“不能快速被代码的读者所理解”**。还意味着**“开发者在试图调用或修改这一代码时，更可能引入bug”**。
 
-A particular type of complexity is **over-engineering**, where developers have
-made the code more generic than it needs to be, or added functionality that
-isn't presently needed by the system. Reviewers should be especially vigilant
-about over-engineering. Encourage developers to solve the problem they know
-needs to be solved *now*, not the problem that the developer speculates *might*
-need to be solved in the future. The future problem should be solved once it
-arrives and you can see its actual shape and requirements in the physical
-universe.
+有一种特殊类型的复杂度叫做**过度工程**，开发者把代码写得非常通用但超出需要，或者添加了系统当前不需要的功能。审查者应当特别警惕过度工程。
+鼓励开发者解决他们所知道的*现在*需要解决的问题，而不是解决开发者猜测未来可能需要解决的问题。
+未来的问题应当在真正到来并且你能看到其实际样子和现实中需求时才解决。
 
 ## 测试
 
