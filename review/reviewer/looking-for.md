@@ -36,47 +36,35 @@ CL比原本应该的更复杂么？对此，需要在CL的各个层面进行检�
 
 ## 测试
 
-Ask for unit, integration, or end-to-end
-tests as appropriate for the change. In general, tests should be added in the
-same CL as the production code unless the CL is handling an
-[emergency](../emergencies.md).
+要求有适合该变更的单元测试、集成测试或端到端测试。
+通常，测试应当添加到产品代码一同添加到CL中，除非这个CL是在处理[紧急情况](../emergencies.md)。
 
-Make sure that the tests in the CL are correct, sensible, and useful. Tests do
-not test themselves, and we rarely write tests for our tests—a human must ensure
-that tests are valid.
+确保CL中的测试是正确的、明智的、有用的。测试不会测试资深，我们很少为我们的测试写测试——每个人都必须确保测试有效。
 
-Will the tests actually fail when the code is broken? If the code changes
-beneath them, will they start producing false positives? Does each test make
-simple and useful assertions? Are the tests separated appropriately between
-different test methods?
+当代码出问题的时候，测试真的会失败吗？
+如果代码变更掩盖了测试，测试会产生假阳性吗？
+每个测试都会做出简单且有用的断言吗？
+这些测试按不同的测试方法进行正确划分了吗？
 
-Remember that tests are also code that has to be maintained. Don't accept
-complexity in tests just because they aren't part of the main binary.
+记住，测试也是代码，必须得到维护。不要仅仅因为它们不是主程序的一部分就接受测试复杂性。
 
 ## 命名
 
-Did the developer pick good names for everything? A good name is long enough to
-fully communicate what the item is or does, without being so long that it
-becomes hard to read.
+开发者为每件事都挑选了一个好名字吗？一个好的名字要足够长，传达这个东西是什么或做什么，但有不会过长而难以阅读。
 
 ## 注释
 
-Did the developer write clear comments in understandable English? Are all of the
-comments actually necessary? Usually comments are useful when they **explain
-why** some code exists, and should not be explaining *what* some code is doing.
-If the code isn't clear enough to explain itself, then the code should be made
-simpler. There are some exceptions (regular expressions and complex algorithms
-often benefit greatly from comments that explain what they're doing, for
-example) but mostly comments are for information that the code itself can't
-possibly contain, like the reasoning behind a decision.
+开发者用可理解的英文编写了清晰的注释吗？
+所有的注释都真的是必须的吗？
+通常，当注释**解释为什么**某些代码会存在、并且不是在解释某些代码在*做什么*时，这些注释就是有用的。
+如果代码因为不够清晰而解释自身，那就应该把代码写得更简单些。
+尽管有一些例外，比如正则表达式和复杂算法通常用注释来解释做了什么会很有意义，
+但是通常注释时用来描述代码本身不可能包含的信息的，比如一个决定背后的原因。
 
-It can also be helpful to look at comments that were there before this CL. Maybe
-there is a TODO that can be removed now, a comment advising against this change
-being made, etc.
+看看这个CL之前存在的注释也会很有帮助。
+也许有某个TODO现在需要删掉，也许注释的建议与这个变更截然相反，等。
 
-Note that comments are different from *documentation* of classes, modules, or
-functions, which should instead express the purpose of a piece of code, how it
-should be used, and how it behaves when used.
+注意，注释不同于类、模块或者函数的*文档*，文档应该用来表达一段代码的目的、应当如何使用以及使用时代码应有怎样的行为。
 
 ## 风格
 
