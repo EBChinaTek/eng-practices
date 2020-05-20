@@ -75,12 +75,9 @@ CL比原本应该的更复杂么？对此，需要在CL的各个层面进行检�
 如果你想要改进某些风格指南中没有的风格点，需要在你的评论前添加前缀“Nit：”，让开发者知道这是一个你认为要改进的代码，但不是强制的。
 不要仅仅根据个人的风格喜好而让CL提交阻塞。
 
-The author of the CL should not include major style changes combined with other
-changes. It makes it hard to see what is being changed in the CL, makes merges
-and rollbacks more complex, and causes other problems. For example, if the
-author wants to reformat the whole file, have them send you just the
-reformatting as one CL, and then send another CL with their functional changes
-after that.
+CL的作者不应当将重大风格变更与其他变更合在一起提交。
+这会导致难以看到CL中哪些进行了改变，让合并和回退更复杂，并导致其他问题。
+比如：如果作者想要重新格式化整个文件，就应当提交给你一份只有重新格式化的CL，在这之后再发一个所做的功能变更的CL。
 
 ## 一致性
 
