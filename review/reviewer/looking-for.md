@@ -81,21 +81,15 @@ CL的作者不应当将重大风格变更与其他变更合在一起提交。
 
 ## 一致性
 
-What if the existing code is inconsistent with the style guide? Per our
-[code review principles](standard.md#principles), the style guide is the
-absolute authority: if something is required by the style guide, the CL should
-follow the guidelines.
+如果已有代码和风格指南不一致怎么办？
+根据我们的[代码审查原则](standard.md#principles)，风格指南是绝对权威：如果风格指南明确要求了的事情，CL就应该遵循该指南。
 
-Otherwise, if the style guideline is more a recommendation and not a
-requirement, then it's a judgment call whether the new code should be consistent
-with the style guide or the surrounding code. Bias towards following the style
-guide unless the local inconsistency would be too confusing.
+若非如此，如果风格指南只给出了一条建议或给出的不是一条要求，那么就需要判断一下新的代码应当与风格指南一致还是和周围的代码一致。
+倾向于遵循风格指南，除非局部的不一致会导致读者过度迷惑。
 
-If no other rule applies, the author should maintain consistency with the
-existing code.
+如果没有适用的其他规则，作者就应当保持和现有代码一致。
 
-Either way, encourage the author to file a bug and add a TODO for cleaning up
-existing code.
+无论哪种情况，都鼓励作者记录一个bug清单或TODO清单用于清理现存代码。
 
 ## 文档
 
