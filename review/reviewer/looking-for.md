@@ -112,29 +112,19 @@ CL的作者不应当将重大风格变更与其他变更合在一起提交。
 
 ## 上下文
 
-在更全面的上下文中看待该CL通常很有用。
+在更全面的上下文中看待该CL通常很有帮助。
+通常代码审查工具只会向你展示出被修改的代码的前后几行。有时你必须查看整个文件才能确保这个变动是明智的。
+例如，你可能只能看到新增了四行代码，但当你看整个文件时，你就会看到这四行在一个具有50行的方法中，现在这个方法其实时需要拆分成更小的方法。
 
-It is often helpful to look at the CL in a broad context. Usually the code
-review tool will only show you a few lines of code around the parts that are
-being changed. Sometimes you have to look at the whole file to be sure that the
-change actually makes sense. For example, you might see only four new lines
-being added, but when you look at the whole file, you see those four lines are
-in a 50-line method that now really needs to be broken up into smaller methods.
-
-It's also useful to think about the CL in the context of the system as a whole.
-Is this CL improving the code health of the system or is it making the whole
-system more complex, less tested, etc.? **Don't accept CLs that degrade the code
-health of the system.** Most systems become complex through many small changes
-that add up, so it's important to prevent even small complexities in new
-changes.
+将系统做为一个整体来考虑CL的上下文也很有用。
+这个CL改进了系统的代码健康度还是让整个系统更复杂、更难测试等？**禁止接受让系统代码健康降级的CL。**
+多数系统在经历许多追加的小变动之后都会变得复杂，所以避免新的变动所带来的小的复杂性非常重要。
 
 ## 好的事情 {#good_things}
 
-If you see something nice in the CL, tell the developer, especially when they
-addressed one of your comments in a great way. Code reviews often just focus on
-mistakes, but they should offer encouragement and appreciation for good
-practices, as well. It’s sometimes even more valuable, in terms of mentoring, to
-tell a developer what they did right than to tell them what they did wrong.
+如果你看到CL中有某些非常赞的地方，务必告知该开发者，特别是当他们用某种非常牛的方式解决了你的某个评论。
+代码审查通常只专注于错误，但它们还应当对优秀的实践给予鼓励和表扬。
+有时告诉一名开发者他们做了哪些正确的事情，比告诉他们做错了什么更有教育意义。
 
 ## 概要
 
