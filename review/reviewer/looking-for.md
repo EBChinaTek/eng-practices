@@ -69,14 +69,11 @@ CL比原本应该的更复杂么？对此，需要在CL的各个层面进行检�
 
 ## 风格
 
-We have [style guides](http://google.github.io/styleguide/) at Google for all
-of our major languages, and even for most of the minor languages. Make sure the
-CL follows the appropriate style guides.
+在谷歌，我们对所有主要语言都有[风格指南](http://google.github.io/styleguide/)，甚至许多小众语言也有。
+确保CL遵循正确的风格指南。
 
-If you want to improve some style point that isn't in the style guide, prefix
-your comment with "Nit:" to let the developer know that it's a nitpick that you
-think would improve the code but isn't mandatory. Don't block CLs from being
-submitted based only on personal style preferences.
+如果你想要改进某些风格指南中没有的风格点，需要在你的评论前添加前缀“Nit：”，让开发者知道这是一个你认为要改进的代码，但不是强制的。
+不要仅仅根据个人的风格喜好而让CL提交阻塞。
 
 The author of the CL should not include major style changes combined with other
 changes. It makes it hard to see what is being changed in the CL, makes merges
