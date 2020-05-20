@@ -4,7 +4,7 @@
 
 -   [代码审查的标准](standard.md)
 -   [在一次代码审查中要看什么](looking-for.md)
--   [在审查CL时进行导航](navigate.md)
+-   [驾驭审查中的CL](navigate.md)
 -   [代码审查的速度](speed.md)
 -   [如何写代码审查评论](comments.md)
 -   [在代码审查中进行打回](pushback.md)
