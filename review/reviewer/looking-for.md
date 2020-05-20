@@ -93,38 +93,26 @@ CL的作者不应当将重大风格变更与其他变更合在一起提交。
 
 ## 文档
 
-If a CL changes how users build, test, interact with, or release code, check to
-see that it also updates associated documentation, including
-READMEs, g3doc pages, and any generated
-reference docs. If the CL deletes or deprecates code, consider whether the
-documentation should also be deleted.
-If documentation is
-missing, ask for it.
+如果某个CL改变了用户对代码进行构建、测试、交互、或发布，就要检查一下看看，是否也更新了附带的文档，包括README、g3doc页面和所有生成的参考文档。
+如果该CL删除或弃用了代码，要考虑是否文档也需要删除。
+如果缺少文档，就要要求补充。
 
 ## 每一行 {#every_line}
 
-Look at *every* line of code that you have been assigned to review. Some things
-like data files, generated code, or large data structures you can scan over
-sometimes, but don't scan over a human-written class, function, or block of code
-and assume that what's inside of it is okay. Obviously some code deserves more
-careful scrutiny than other code&mdash;that's a judgment call that you have to
-make&mdash;but you should at least be sure that you *understand* what all the
-code is doing.
+查看指定你进行审查的*每*行代码。诸如数据文件、生成的代码、庞大的数据结构，有时你可以一带而过，但是不要跳过人工书写的类、函数或代码块，
+你必须要看看里面有没有哪些是OK的。显而易见，有些代码比其他一些代码更需要仔细审视&mdash;你必须要做判断&mdash;
+但你至少要确保你*理解*整段代码在做什么。
 
-If it's too hard for you to read the code and this is slowing down the review,
-then you should let the developer know that
-and wait for them to clarify it before you try to review it. At Google, we hire
-great software engineers, and you are one of them. If you can't understand the
-code, it's very likely that other developers won't either. So you're also
-helping future developers understand this code, when you ask the developer to
-clarify it.
+如果你太难读懂该代码，并且这让审查变慢，那你就应该让开发者知道这个情况，在你试图审查之前等他们对此加以澄清。
+在谷歌，我们聘用了非常优秀的软件工程师，你也是其中一员。如果你都无法理解该代码，那其他开发者就非常可能也无法理解。
+所以，当你让开发者对其进行澄清时，也是在帮助未来的开发者理解该代码。
 
-If you understand the code but you don't feel qualified to do some part of the
-review, make sure there is a reviewer on the CL who is qualified, particularly
-for complex issues such as security, concurrency, accessibility,
-internationalization, etc.
+如果你理解了该代码，但你觉得不够资格对其中某些部分进行审查，特别是对于诸如安全、并发、客房文星、国际化等复杂问题，
+你必须确定谁有资格做这个CL的审查者。
 
 ## 上下文
+
+在更全面的上下文中看待该CL通常很有用。
 
 It is often helpful to look at the CL in a broad context. Usually the code
 review tool will only show you a few lines of code around the parts that are
@@ -167,4 +155,4 @@ tell a developer what they did right than to tell them what they did wrong.
 
 确保审查要求审查代码的 **每一行**，看看**上下文**，确保你在**改进代码健康**并且赞赏开发人员所做的 **好的事情**。
 
-接下来：[导航评审中的CL](navigate.md)
+接下来：[驾驭评审中的CL](navigate.md)
