@@ -1,23 +1,16 @@
-# How to handle reviewer comments
+# 如何处理审查者的评论
 
 
 
-When you've sent a CL out for review, it's likely that your reviewer will
-respond with several comments on your CL. Here are some useful things to know
-about handling reviewer comments.
+当你将某个CL发去审查，你的审查者可能会在你的CL上回复若干评论。你要了解有关处理审查者评论的一些有用的事情。
 
-## Don't Take it Personally {#personal}
+## 不要认为评论是针对你个人的 {#personal}
 
-The goal of review is to maintain the quality of our codebase and our products.
-When a reviewer provides a critique of your code, think of it as their attempt
-to help you, the codebase, and Google, rather than as a personal attack on you
-or your abilities.
+审查的目标是维护我们的代码库和我们的产品的质量。
+当某个审查者对你的代码给出了一条批评，应当认为他们在试图帮助你、帮助代码库、帮助公司（Google），而不是对你或你的能力进行攻击。
 
-Sometimes reviewers feel frustrated and they express that frustration in their
-comments. This isn't a good practice for reviewers, but as a developer you
-should be prepared for this. Ask yourself, "What is the constructive thing that
-the reviewer is trying to communicate to me?" and then operate as though that's
-what they actually said.
+有时，审查者会感到心烦挫败，并且他们会在其评论中表达这种情绪。这对于审查者来说不是好的实践，
+但是作为一名开发人员，你应当对此做好心理准备。问问你自己：“这个审查者试图想我传达哪些建设性的事情？”，然后就当作这是他们真正说的。
 
 **Never respond in anger to code review comments.** That is a serious breach of
 professional etiquette that will live forever in the code review tool. If you
